@@ -1,0 +1,28 @@
+<!Doctype html>
+<html>
+<head>
+<title>乱七八槽</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="test.js" type="text/javascript"></script>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="AjaxLogin.js"  type="text/javascript"></script>
+</head>
+<body style="background-image: url(timg.jpg);background-size: 100%" onload="getUser()">
+<div id="introduce" class=div2 style="float:left;width:20%;" >用户信息</div>
+<div id="msg" class=div2></div>
+	<div class=div2>
+	<!-- 使用Ajax登录时，form表单可不用指定请求方法和请求地址。因为Ajax已经定义好了 -->
+	<!--  <form  id=formData method="post" action="./Login"> -->
+	<form  id=formData>
+		<table class=table>
+		<tr><td><div>用户ID</div></td><td><div id="userid" ></div></td></tr>
+		<tr><td><div>用户呢称</div></td><td><div id="nickname" ></div></td></tr>
+		<tr><td><div>用户描述</div></td><td><div id="describe" ></div></td></tr>
+		<tr><td><input type ="button" value="注销" onclick="logout()"><td></td></tr>
+	</table>
+	</form>
+</div>
+</body>
+</html>
+
